@@ -42,7 +42,7 @@ import ErrorPage from './ErrorPage'
 import CheckoutSuccess from './pages/client/CheckoutSuccess'
 
 //axios config start
-axios.defaults.baseURL = 'http://localhost:8000'
+axios.defaults.baseURL = 'https://diployed-project.onrender.com'
 axios.defaults.withCredentials = true
 // axios config end
 

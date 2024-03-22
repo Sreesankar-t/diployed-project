@@ -85,7 +85,7 @@ const forgotPassword = asyncHandler(async (req, res) => {
       to: user.email,
       subject: 'change password requst',
       html: `<p> the message from the WanderIn.if you want to change the password ?
-               </p> <a href="http://localhost:3000/login/${user._id}">Click here to reset your password</a>`
+               </p> <a href="https://diployed-project.onrender.com/login/${user._id}">Click here to reset your password</a>`
     }
 
     transporter.sendMail(mailOptions, function (error, info) {
@@ -258,8 +258,8 @@ const checkoutSection = asyncHandler(async (req, res) => {
           quantity: 1
         }
       ],
-      success_url: `http://localhost:3000/checkoutSuccess`,
-      cancel_url: `http://localhost:3000/hotelDetails/${_id}`
+      success_url: `https://diployed-project.onrender.com/checkoutSuccess`,
+      cancel_url: `https://diployed-project.onrender.com/hotelDetails/${_id}`
     })
     res.send({ url: session.url })
   } catch (error) {}
